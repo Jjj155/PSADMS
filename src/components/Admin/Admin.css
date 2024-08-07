@@ -1,0 +1,1182 @@
+/*ADMIN CSS*/
+
+/* Container Styles */
+
+.admin-login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.admin-login-left-section{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.admin-login-right-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.admin-login-logo {
+  width: 50%; /* Adjust size as needed */
+  height: 55%; /* Maintain aspect ratio */
+  margin-bottom: 20px;
+  margin-left: 150px;
+}
+
+.admin-login-form {
+  width: 100%;
+  max-width: 400px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-right: 150px;
+
+}
+
+.admin-login-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.admin-login-form input[type="text"],
+.admin-login-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.admin-login-password-container {
+  position: relative;
+}
+
+.admin-login-password-toggle-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.admin-login-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #1e8516;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.admin-login-btn:hover {
+  background-color: #0056b3; 
+}
+
+
+
+/* Form Links */
+
+.admin-login-form-links {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin-login-form-links a {
+  text-decoration: none;
+  color: #004ae9;
+  font-size: 14px;
+}
+
+.admin-login-form-links span {
+  margin: 0 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+
+
+/* AdminSideNav.css */
+
+.admin-sidebar {
+  width: 300px;
+  height: 32vh;
+  background-color: #f5f5f5;
+  color: #000000;
+  position: fixed;
+  top: 90px; 
+  left: 0;
+  padding-top: 60px; 
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  position: absolute;
+}
+
+.admin-sidebar-links {
+  text-align: center;
+  list-style-type: none;
+  padding: 0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.admin-sidebar-links li {
+  padding: 20px 0px;
+  margin: 15px;
+  border-bottom: 1px solid #ddd;
+  color: #2c2c2c;
+}
+
+.admin-sidebar-links li:last-child {
+  border-bottom: none; 
+}
+
+.admin-sidebar-link {
+  text-decoration: none;
+  color: inherit; 
+  font-size: 1.2rem;
+  padding: 5px 15px; 
+  display: block; 
+}
+
+.admin-sidebar-link:hover {
+  background-color: #5549e3;
+  color: #fff; 
+  border-radius: 50px;
+  transition: background-color 0.3s ease; 
+}
+
+
+
+/*HIDE THE SIDEBAR*/
+
+.admin-sidebar {
+  color: #fff;
+  transition: transform 0.3s ease-in-out;
+}
+
+.admin-sidebar.visible {
+  transform: translateX(0);
+}
+
+.admin-sidebar.hidden {
+  transform: translateX(-250px); /* Adjust the value to keep a portion visible */
+}
+
+.admin-sidebar-toggle-btn {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #2c2c2c;
+  color: #fff;
+  margin: 30px 0 10px 0; 
+  position: absolute;
+  left: -20px; /* Adjust the value to place it properly */
+  transition: left 0.3s ease-in-out;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+}
+
+.admin-sidebar-toggle-btn:hover {
+  background-color: #555;
+}
+
+.admin-sidebar-toggle-btn svg {
+  font-size: 1.5em;
+}
+
+
+
+/*Admin Dash User Table*/
+
+.admin-dash-users-content{
+  justify-content: center;
+  margin: 30vh 0 0 300px;
+  font-size:2rem;
+  font-weight: 500;
+  font-style: inherit;
+  padding: 50px;
+}
+
+.admin-dash-users-content h2{
+  font-size: 50px;
+}
+
+.admin-dash-users-content {
+  text-align: center;
+  justify-content: center;
+  margin-top: -5vh;
+  font-size: 1rem;
+}
+
+.admin-dash-users-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-dash-users-table th,
+.admin-dash-users-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.admin-dash-users-table th {
+  background-color: #b9b7b7;
+}
+
+.admin-table-action button{
+  margin: 5px;
+  cursor: pointer;
+}
+
+.admin-dash-edit-btn{
+  background-color: transparent;
+  border: 2px solid #1e8516;
+  border-radius: 10px;
+  font-weight: bold;
+  color: #2c2c2c;
+  width: 100px;
+  height: 30px;
+  
+}
+
+.admin-dash-delete-btn{
+  background-color: transparent;
+  border: 2px solid rgb(211, 12, 12);
+  border-radius: 10px;
+  font-weight: bold;
+  color: #2c2c2c;
+  width: 100px;
+  height: 30px;
+}
+
+.admin-dash-edit-btn:hover{
+  background-color: #1e8516;
+  color: #fff;
+}
+  
+.admin-dash-delete-btn:hover{
+  background-color: rgb(211, 12, 12);
+  color: #fff;
+}
+
+
+
+/* SEARCH FIELD AND ADD USERS BUTTON */
+
+.admin-dash-search {
+  display: flex;
+  justify-content: space-between; /* Aligns items with equal space between them */
+  align-items: center; /* Aligns items vertically */
+  margin-top: 8vh;
+}
+
+.admin-dash-search input[type="text"] {
+  width: 22%; /* Adjust as needed */
+  height: 2rem;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.admin-dash-add-btn {
+  background-color: transparent;
+  border: 2px solid #1e8516;
+  font-weight: bold;
+  color: #2c2c2c;
+  padding: 8px;
+  width: 8vw;
+  height: 4vh;
+  border-radius: 10px;
+  float: right;
+  cursor: pointer;
+}
+
+.admin-dash-add-btn:hover {
+  background-color: #45a049;
+  color: #fff;
+}
+  
+/* Modal styles Add User */
+.add-new-user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 40px;
+  font-weight: 300;
+}
+  
+  .close:hover {
+  color: #7e7d7d;
+}
+
+.add-new-user-content {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 150%;
+  position: relative;
+}
+
+.add-new-user-content h2{
+  font-size: 40px;
+  margin-top: 10px;
+}
+
+.add-new-user-label {
+  display: block;
+  float: left;
+  font-weight: bold;
+}
+
+.admin-input[type='text'],
+.admin-input[type='email']
+.add-new-user-select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-new-user-select{
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.add-new-user-btn{
+  width: 100%;
+  padding: 10px;
+  background-color: #1e8516;
+  color: #00f33d;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-new-user-btn:hover{
+  background-color: #31c231;
+
+}
+
+
+
+/* DeleteUserModal styles */
+
+.delete-user-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+}
+
+.delete-user-modal-content {
+  background-color: #fefefe;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  margin-right: 100px;
+}
+
+.delete-user-modal-content h2 {
+  margin-top: 0;
+}
+
+.delete-user-modal-content p {
+  margin: 20px 0 20px 0 ;
+}
+
+.delete-user-modal-actions {
+  display: flex;
+  justify-content: space-evenly;
+  width: 265px;
+
+}
+
+.delete-modal-btn {
+  background-color: #e02c2c;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 80px;
+  width: 500px;
+}
+
+.cancel-modal-btn {
+  background-color: #6c757d;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 60px;
+  }
+
+.delete-modal-btn:hover {
+  background-color: #b62929;
+}
+
+.cancel-modal-btn:hover {
+  background-color: #5c5454;
+  }
+
+/* EditUserModal styles */
+
+.edit-user-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+}
+
+.edit-user-modal-content {
+  background-color: #fefefe;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.close:hover {
+  color: #999;
+}
+
+.edit-user-form {
+  margin-top: 20px;
+}
+
+.edit-user-label {
+  display: block;
+  float: left;
+  font-weight: bold;
+}
+
+.edit-user-input[type='text'],
+.edit-user-input[type='email'] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.edit-user-btn{
+  width: 100%;
+  padding: 10px;
+  background-color: #1e8516;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edit-user-btn:hover{
+  background-color: #31c231;
+}
+
+
+
+/* ADMIN - EDIT USER BUTTON */
+
+/* Add custom styles for the dropdown select */
+
+.edit-user-modal select {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+/* Style the button */
+
+.edit-user-modal button {
+  background-color: #1e8516;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: left;
+}
+
+
+/* Change color on hover */
+
+.edit-user-modal button:hover {
+  background-color: #45a049;
+}
+
+
+/* Clear floats after the form */
+
+.edit-user-modal::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/*Document Tab*/
+
+.admin-dash-documents-content h2 {
+  font-size: 50px;
+}
+
+.admin-dash-documents-content {
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
+  font-size: 1rem;
+}
+
+.admin-dash-documents-content {
+  text-align: center;
+  margin: 20vh 0 0 -80px;
+  font-size: 2rem;
+  font-weight: 500;
+  font-style: inherit;
+  padding: 50px;
+}
+
+.admin-dash-documents-content h2 {
+  font-size: 50px;
+  margin-left: 350px;
+  text-align: center;
+}
+
+.admin-dash-documents-content {
+  justify-content: center;
+  align-items: center;
+  margin-top: -5vh;
+  font-size: 1rem;
+}
+
+.admin-documents-table-container {
+  overflow-x: auto;
+  max-width: calc(100% - 350px); /* Adjust the maximum width considering the sidebar width */
+  margin-left: 350px; /* Adjust the margin to match the sidebar width */
+}
+
+.admin-documents-table {
+  border-collapse: collapse;
+  width: auto; /* Let the table determine its own width */
+  min-width: 100%; /* Ensure minimum width to enable horizontal scrolling */
+  table-layout: fixed; /* Ensures the table layout is fixed */
+}
+
+.admin-documents-table th,
+.admin-documents-table td {
+  border: 1px solid #a0a0a0;
+  padding: 8px;
+  text-align: left;
+  white-space: nowrap; /* Prevents text wrapping */
+}
+
+.admin-documents-table th {
+  background-color: #c2c2c2;
+  position: sticky;
+  top: 0px;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.admin-documents-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.admin-documents-table tbody tr:hover {
+  background-color: #ddd;
+}
+
+
+/* Adjust table header width for fixed layout */
+.admin-documents-table th {
+  min-width: 150px; /* Adjust the minimum width as needed */
+}
+
+
+/* Show the scrollbar */
+.admin-documents-table-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.admin-documents-table-container::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 5px;
+}
+
+
+/* Hide additional columns */
+.admin-documents-table th:nth-child(n+32),
+.admin-documents-table td:nth-child(n+32) {
+  display: none;
+}
+
+.admin-docu-search {
+  display: flex;
+  justify-content: space-between; /* Aligns items with equal space between them */
+  align-items: center; /* Aligns items vertically */
+  margin-top: 8vh;
+}
+
+.admin-docu-search input[type="text"] {
+  width: 22%; /* Adjust as needed */
+  height: 2rem;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-left: 350px;
+}
+
+.admin-docu-add-btn {
+  background-color: transparent;
+  border: 2px solid #1e8516;
+  font-weight: bold;
+  color: #2c2c2c;
+  padding: 8px;
+  width: 8vw;
+  height: 4vh;
+  border-radius: 10px;
+  float: right;
+  cursor: pointer;
+}
+
+.admin-docu-add-btn:hover {
+  background-color: #45a049;
+  color: #fff;
+}
+
+
+/* AddDocuModal.css */
+
+.docu-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+}
+
+.add-docu-head h2 {
+  margin: 20px 0;
+}
+
+.admin-docu-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.admin-docu-content {
+  background-color: #fefefe;
+  padding: 50px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 95% !important;
+  max-height: 90%;
+  position: relative; 
+  overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+.docu-label {
+  display: block;
+  font-weight: bold;
+}
+
+.docu-form-scrollable {
+  max-height: 500px; /* Adjust the max-height as needed */
+  overflow-y: auto; /* Add vertical scrollbar when content exceeds max-height */
+}
+
+.docu-form-group {
+  display: flex;
+}
+
+.docu-form-group-left {
+  flex: 1;
+  margin-right: 20px;
+}
+
+
+.docu-form-group-right {
+  flex: 1;
+}
+
+.docu-label-action {
+  display: block;
+  font-weight: bold;
+}
+
+.add-docu-input[type="text"],
+.add-docu-input[type="email"],
+textarea {
+  width: 250px; /* Adjust the width of the input fields */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.admin-docu-submitbtn[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.admin-docu-submitbtn[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.add-modal-btn {
+  width: 10%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #1e8516;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-modal-btn:hover {
+  background-color: #31c231;
+}
+
+
+/* EditDocuModal styles */
+
+.edit-docu-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+}
+
+.edit-user-head h2{
+  margin: 20px 0;
+}
+  
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 40px;
+  font-weight: 300;
+}
+    
+.close:hover {
+  color: #999;
+}
+  
+.edit-docu-modal-content {
+  background-color: #fefefe;
+  padding: 50px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 95% !important;
+  max-height: 90%;
+  position: relative; 
+  overflow-x: auto; /* Enable horizontal scrolling */
+}
+  
+.edit-docu-label {
+  display: block;
+  font-weight: bold;
+}
+  
+.edit-docu-form-scrollable {
+  max-height: 500px; /* Adjust the max-height as needed */
+  overflow-y: auto; /* Add vertical scrollbar when content exceeds max-height */
+}
+
+.edit-docu-form-group {
+  display: flex;
+}
+  
+.edit-docu-form-group-left{
+  flex: 1;
+  margin-right: 20px;
+}
+  
+.edit-docu-form-group-right {
+  flex: 1;
+}
+  
+.add-docu-input[type="text"],
+.add-docu-input[type="email"],
+textarea {
+  width: 250px; /* Adjust the width of the input fields */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+  
+  .edit-docu-btn{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .edit-docu-btn:hover{
+    background-color: #45a049;
+  }
+  
+
+  /* DeleteUserModal styles */
+
+.delete-docu-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+  }
+
+  .delete-docu-modal h2{
+    margin: 0 auto;
+  }
+  
+  .delete-docu-modal-content {
+  background-color: #fefefe;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  }
+  
+  
+  .delete-docu-modal-content p {
+  margin: 20px 0 20px 0; 
+ }
+  
+ .delete-docu-modal-actions {
+  display: flex;
+  justify-content: space-evenly;
+  width: 265px;
+  
+  }
+  
+  .delete-modal-btn {
+  background-color: #e02c2c;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 80px;
+  width: 500px;
+  }
+  
+  .cancel-modal-btn {
+    background-color: #6c757d;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 60px;
+    }
+  
+  .delete-modal-btn:hover {
+  background-color: #b62929;
+  }
+  
+  .cancel-modal-btn:hover {
+    background-color: #000000;
+    }
+
+
+
+
+/* Pagination container */
+.pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Pagination item */
+.pagination-item {
+  margin: 0 5px;
+}
+
+/* Pagination link */
+.pagination-link {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Pagination link hover */
+.pagination-link:hover {
+  background-color: #0056b3;
+}
+
+/* Active pagination link */
+.pagination-link.active {
+  background-color: #0056b3;
+}
+
+/* Disabled pagination link */
+.pagination-link.disabled {
+  background-color: #ddd;
+  color: #999;
+  cursor: not-allowed;
+  border-color: #ddd;
+}
+
+/* Previous and next buttons */
+.pagination-link.prev,
+.pagination-link.next {
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Previous and next buttons hover */
+.pagination-link.prev:hover,
+.pagination-link.next:hover {
+  background-color: #0056b3;
+}
+
+/* Centering arrow icons */
+.pagination-link.prev::before,
+.pagination-link.next::after {
+  content: '\2039'; /* Unicode for left single angle quotation mark */
+  font-size: 14px;
+}
+
+.pagination-link.next::after {
+  content: '\203A'; /* Unicode for right single angle quotation mark */
+}
+
+/* Small pagination */
+.pagination.small .pagination-link,
+.pagination.small .pagination-link.prev,
+.pagination.small .pagination-link.next {
+  padding: 6px 10px;
+  font-size: 14px;
+}
+
+/* Large pagination */
+.pagination.large .pagination-link,
+.pagination.large .pagination-link.prev,
+.pagination.large .pagination-link.next {
+  padding: 12px 18px;
+  font-size: 18px;
+}
+
+
+.docu-pagination{
+  margin-top: 1vh;
+  float: left;
+
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-new-user {
+  background: white;
+
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.add-new-user-content {
+  position: relative;
+  text-align: left;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.modal-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.modal-input, .modal-select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.modal-input:focus, .modal-select:focus {
+  outline: none;
+  border-color: #0fbd0f;
+}
+
+.modal-btn {
+  width: 100%;
+  padding: 10px 15px;
+  background-color: #32af13;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.modal-btn:hover {
+  background-color: #0bd115;
+}
+
+.modal-btn:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.required {
+  border-color: red;
+}

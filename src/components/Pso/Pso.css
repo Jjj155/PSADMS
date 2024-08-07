@@ -1,0 +1,538 @@
+/* Login.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.pso-login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.pso-left-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pso-right-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pso-dash-documents-content {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 100px -380px;
+  font-size: 1rem;
+  font-weight: 500;
+  font-style: inherit;
+  padding: 50px;
+}
+
+
+.pso-documents-table-container {
+  overflow-x: auto;
+  max-width: calc(100% - 350px); /* Adjust the maximum width considering the sidebar width */
+  margin-left: 350px; /* Adjust the margin to match the sidebar width */
+}
+
+.pso-documents-table {
+  border-collapse: collapse;
+  width: auto; /* Let the table determine its own width */
+  min-width: 100%; /* Ensure minimum width to enable horizontal scrolling */
+  table-layout: fixed; /* Ensures the table layout is fixed */
+}
+
+.pso-documents-table th,
+.pso-documents-table td {
+  border: 1px solid #a0a0a0;
+  padding: 8px;
+  text-align: left;
+  white-space: nowrap; /* Prevents text wrapping */
+}
+
+.pso-documents-table th {
+  background-color: #c2c2c2;
+  position: sticky;
+  top: 0px;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.pso-documents-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.pso-documents-table tbody tr:hover {
+  background-color: #ddd;
+}
+
+.pso-docu-search {
+  display: flex;
+  justify-content: space-between; /* Aligns items with equal space between them */
+  align-items: center; /* Aligns items vertically */
+  margin-top: 8vh;
+}
+
+.pso-docu-search input[type="text"] {
+  width: 13%; /* Adjust as needed */
+  height: 2rem;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-left: 350px;
+}
+
+
+
+
+
+.pso-logo {
+  width: 50%; /* Adjust size as needed */
+  height: 55%; /* Maintain aspect ratio */
+  margin-bottom: 20px;
+  margin-left: 150px;
+}
+
+.pso-login-form {
+  width: 100%;
+  max-width: 400px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin-right: 150px;
+}
+
+.pso-login-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.pso-login-form input[type="text"],
+.pso-login-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.pso-login-form-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #1e8516;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pso-login-form-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Form Links */
+.pso-form-links {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pso-form-links a {
+  text-decoration: none;
+  color: #004ae9;
+  font-size: 14px;
+}
+
+.pso-form-links span {
+  margin: 0 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+ /* AdminSideNav.css */
+
+ .pso-sidebar {
+  width: 300px;
+    height: 30vh;
+    background-color: #f5f5f5;
+    color: #000000;
+    position: fixed;
+    top: 90px; 
+    left: 0;
+    padding-top: 60px; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    margin-top: 30px;
+    position: absolute;
+}
+
+.pso-sidebar-nav-links {
+  text-align: center;
+  list-style-type: none;
+  padding: 0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.pso-sidebar-nav-links li {
+  padding: 20px 0px;
+  margin: 15px;
+  border-bottom: 1px solid #ddd;
+  color: #2c2c2c;
+}
+
+.pso-sidebar-nav-links li:last-child {
+  border-bottom: none; 
+}
+
+.pso-sidebar-nav-link {
+  text-decoration: none;
+  color: inherit; 
+  font-size: 1.2rem;
+  padding: 5px 15px; 
+  display: block; 
+}
+
+.pso-sidebar-nav-link:hover {
+  background-color: #5549e3;
+  color: #fff; 
+  border-radius: 50px;
+  transition: background-color 0.3s ease; 
+}
+
+/*HIDE THE SIDEBAR*/
+
+.pso-sidebar {
+  color: #fff;
+  transition: transform 0.3s ease-in-out;
+}
+
+.pso-sidebar.visible {
+  transform: translateX(0);
+}
+
+.pso-sidebar.hidden {
+  transform: translateX(-250px); /* Adjust the value to keep a portion visible */
+}
+
+.pso-sidebar-toggle-btn {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #2c2c2c;
+  color: #fff;
+  margin: 28px 0 10px 0; 
+  position: absolute;
+  left: -20px; /* Adjust the value to place it properly */
+  transition: left 0.3s ease-in-out;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+}
+
+.pso-sidebar-toggle-btn:hover {
+  background-color: #555;
+}
+
+.pso-sidebar-toggle-btn svg {
+  font-size: 1.5em;
+}
+
+.pso-dash-users-content{
+  text-align: center;
+  margin: 20vh 0 0 300px;
+  font-size:2rem;
+  font-weight: 500;
+  font-style: inherit;
+  padding: 50px;
+  
+  }
+  
+  .pso-dash-users-content h2{
+  font-size: 50px;
+  }
+  
+  .pso-dash-users-content {
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
+  font-size: 1rem;
+  }
+
+
+
+
+  /* AddDocuModal.css */
+
+.pso-docu-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+}
+
+.pso-add-docu-head h2 {
+  margin: 20px 0;
+}
+
+.pso-docu-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.pso-docu-content {
+  background-color: #fefefe;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 50% !important;
+  max-height: 90%;
+  position: relative; 
+  overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+.docu-label {
+  display: block;
+  font-weight: bold;
+}
+
+.docu-form-scrollable {
+  max-height: 500px; /* Adjust the max-height as needed */
+  overflow-y: auto; /* Add vertical scrollbar when content exceeds max-height */
+}
+
+.docu-form-group {
+  display: flex;
+}
+
+.docu-form-group-left {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.docu-form-group-right {
+  flex: 1;
+}
+
+.docu-label-action {
+  display: block;
+  font-weight: bold;
+}
+
+.add-docu-input[type="text"],
+.add-docu-input[type="email"],
+textarea {
+  width: 250px; /* Adjust the width of the input fields */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.admin-docu-submitbtn[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.admin-docu-submitbtn[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.add-modal-btn {
+  width: 10%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #1e8516;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-modal-btn:hover {
+  background-color: #31c231;
+}
+
+
+/* EditDocuModal styles */
+
+.pso-edit-docu-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+}
+
+.pso-edit-user-head h2{
+  margin: 20px 0;
+}
+  
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 40px;
+  font-weight: 300;
+}
+    
+.close:hover {
+  color: #999;
+}
+  
+.pso-edit-docu-modal-content {
+  background-color: #fefefe;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 50% !important;
+  max-height: 90%;
+  position: relative; 
+  overflow-x: auto; /* Enable horizontal scrolling */
+}
+  
+.edit-docu-label {
+  display: block;
+  font-weight: bold;
+}
+  
+.edit-docu-form-scrollable {
+  max-height: 500px; /* Adjust the max-height as needed */
+  overflow-y: auto; /* Add vertical scrollbar when content exceeds max-height */
+}
+
+.edit-docu-form-group {
+  display: flex;
+}
+  
+.edit-docu-form-group-left{
+  flex: 1;
+  margin-right: 20px;
+}
+  
+.edit-docu-form-group-right {
+  flex: 1;
+}
+  
+.add-docu-input[type="text"],
+.add-docu-input[type="email"],
+textarea {
+  width: 250px; /* Adjust the width of the input fields */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+  
+  .edit-docu-btn{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .edit-docu-btn:hover{
+    background-color: #45a049;
+  }
+  
+
+  /* DeleteUserModal styles */
+
+.delete-docu-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+  }
+
+  .delete-docu-modal h2{
+    margin: 0 auto;
+  }
+  
+  .delete-docu-modal-content {
+  background-color: #fefefe;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  }
+  
+  
+  .delete-docu-modal-content p {
+  margin: 20px 0 20px 0; 
+ }
+  
+ .delete-docu-modal-actions {
+  display: flex;
+  justify-content: space-evenly;
+  width: 265px;
+  
+  }
+  
+  .delete-modal-btn {
+  background-color: #e02c2c;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 80px;
+  width: 500px;
+  }
+  
+  .cancel-modal-btn {
+    background-color: #6c757d;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 60px;
+    }
+  
+  .delete-modal-btn:hover {
+  background-color: #b62929;
+  }
+  
+  .cancel-modal-btn:hover {
+    background-color: #5c5454;
+    }

@@ -1,0 +1,115 @@
+.create-new-acc-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  }
+  
+  .createacc-left-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .createacc-right-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .create-acc-logo {
+    width: 50%; /* Adjust size as needed */
+    height: 55%; /* Maintain aspect ratio */
+    margin-bottom: 20px;
+    margin-left: 150px;
+  }
+  
+  .create-new-acc-form {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: 150px;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  .create-new-acc-form {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: 150px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 10px;
+  }
+
+  .loc{
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 15px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  
+  input[type="submit"],
+  .create-acc-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #1e8516;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover,
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .back-btn {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  /* SHOW PASSWORD */
+
+.checkbox-container {
+  display: inline-flex;
+  align-items: center;
+  margin: 10px 10px 0 5px;
+  float: left;
+}
+
+.checkbox-label {
+  margin: 17px 10px 0 5px;
+}
+
+.checkbox-container input[type="checkbox"] {
+  cursor: pointer;
+}

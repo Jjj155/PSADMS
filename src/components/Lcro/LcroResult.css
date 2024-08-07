@@ -1,0 +1,137 @@
+/* .docu-title */
+.docu-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    margin-top: 100px;
+}
+
+  .docu-title h2 {
+    font-size: 1.8rem; /* Removed duplicate font-size declaration */
+    margin-top: 20px; /* Adjusted margin for better spacing */
+}
+
+
+/* .result-table-container */
+  .result-table-container {
+    margin-top: 20px;
+    margin-bottom: 150px;
+    width: 100%;
+}
+
+/* .result-table */
+  .result-table {
+    width: 60%;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+  .result-table th,
+  .result-table td {
+    border: 1px solid #ddd;
+    padding: 17px;
+    text-align: left;
+}
+
+  .result-table th {
+    width: 25%;
+    background-color: #f2f2f2; /* Combined with .result-table th */
+}
+
+  .result-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+  .result-table tbody tr:hover {
+    background-color: #d4eaf7;
+}
+
+/* .docu-back */
+  .docu-back {
+    width: 150px;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 15px;
+}
+
+  .docu-back button {
+    width: 80%;
+    padding: 10px;
+    background: #da2a0b;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    margin-left: 15px;
+}
+
+  .docu-back button:hover {
+    background-color: red;
+}
+
+/* .prev-tran */
+  .prev-tran {
+    background-color: #d82828;
+    color: #ffffff;
+    width: 200px;
+    margin: auto;
+    padding: 8px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+  .prev-tran:hover {
+    background-color: red;
+}
+
+/* .docu-header */
+  .docu-header {
+    display: flex;
+    flex-direction: row; /* Change to row */
+    align-items: center;
+    justify-content: center; /* Center horizontally */
+    gap: 10px;
+}
+
+  .docu-logo {
+    width: 250px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Add spacing between logo and text */
+}
+
+/* Media query for tablets and smaller devices */
+@media screen and (max-width: 768px) {
+  .docu-title {
+    font-size: 1.5rem; /* Decrease font size for smaller screens */
+}
+  
+  .docu-header {
+    flex-direction: column; /* Change to column for smaller screens */
+    margin-right: 0; /* Remove right margin for smaller screens */
+    text-align: center; /* Center text for smaller screens */
+}
+
+  .docu-logo {
+    width: 150px; /* Adjust width for smaller screens */
+    margin-right: 0; /* Remove right margin for smaller screens */
+    margin-bottom: 10px; /* Add bottom margin for smaller screens */
+}
+
+  .result-table{
+    width: 90%;
+}
+
+.docu-title h2{
+  font-size: 1rem;
+}
+
+.lcro-submit-button{
+  text-align: center;
+  
+}
+}

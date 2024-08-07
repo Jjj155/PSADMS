@@ -1,0 +1,96 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(15px + 1vmin);
+  color: rgb(0, 0, 0);
+  margin-top: 125px;
+}
+
+.App-header img{
+  margin: 60px 0 50px 0;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  /* animation: spin 4s linear infinite; */
+}
+
+@keyframes spin {
+  from {
+      transform: rotate(0deg); /* Start rotation from 0 degrees */
+  }
+  to {
+      transform: rotate(360deg); /* Rotate to 360 degrees */
+  }
+}
+
+.home-title{
+  margin-bottom: 2rem;
+}
+  
+.buttons-home {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin-bottom: 50px;
+  line-height: 40px;
+}
+
+.button2,
+.button3,
+.button4,
+.button5 {
+  width: 400px;
+  margin: 5px;
+  cursor: pointer;
+  background-color: #ffffff;
+  font-size: 20px;
+  border-radius: 15px;
+  padding: 8px 40px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: 3px solid black;
+  transition: background-color 0.3s ease; /* Adding a smooth transition effect */ 
+}
+
+.button4 {
+  background-color: #fbfdff;
+}
+
+/* Hover effect */
+.button2:hover,
+.button3:hover,
+.button4:hover,
+.button5:hover {
+  background-color: #196BBC;
+  color: white; /* Change this color to your desired hover effect */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .buttons-home {
+    flex-direction: column; /* Change to a horizontal layout on smaller screens */
+    flex-wrap: wrap; /* Allow buttons to wrap to the next line */
+    justify-content: center; /* Center buttons horizontally */
+  }
+
+  .button2,
+  .button3,
+  .button4,
+  .button5 {
+    flex: 1; /* Equal width for buttons in a row */
+    max-width: none;
+    padding: 8px 15px; /* Adjust padding for smaller screens */
+  }
+}

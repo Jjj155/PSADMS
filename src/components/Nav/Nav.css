@@ -1,0 +1,65 @@
+/* Navigation.css */
+.navbar {
+  height: 12vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #5549e3;
+  padding: 10px 20px;
+
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.brand-logo {
+  width: 80px; /* Adjust as per your logo size */
+  background-color: #5549e3;
+  height: auto;
+}
+
+.brand-name {
+  font-size: 1.2em;
+}
+
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link{
+  color: white;
+  font-weight: 700;
+  margin: 0 30px 0 0;
+}
+
+.nav-links li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+}
+
+.brand-title{
+  margin: 0 20px 0 0;
+  padding: 15px 0 0 50px;
+  font-size: 2.5rem;
+  color: #fff;
+  
+}
+
+/* Nav.css */
+.nav-link .fas.fa-home.clicked {
+  transform: scale(1.2); /* Example click effect: increase size */
+  /* Add other click effects as needed */
+}
+

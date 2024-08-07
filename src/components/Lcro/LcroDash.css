@@ -1,0 +1,144 @@
+
+/* Add this CSS to prevent horizontal scrolling */
+body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+  
+  .dash-docu-container {
+    display: flex; /* Add flex display to the container */
+    height: 100vh;
+  }
+  
+  .dash-left-section {
+    flex: 1; /* Set flex-grow to 1 to occupy available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .dash-left-section img {
+    margin-top: 20px;
+    width: 70%; /* Adjust the width of the logo as needed */
+    height: 65%; /* Adjust the height of the logo as needed */
+    animation: rotateLogo 80s linear infinite; /* Add animation to rotate the logo */
+    
+  }
+  
+  @keyframes rotateLogo {
+    from {
+      transform: rotate(0deg); /* Rotate from 0 degrees */
+    }
+    to {
+      transform: rotate(360deg); /* Rotate to 360 degrees */
+    }
+  }
+  
+  .dash-right-section {
+    flex: 1; /* Set flex-grow to 1 to occupy available space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .dash-form {
+    max-width: 500px;
+    height: 450px;
+    width: 100%;
+    padding: 20px; /* Add padding to the form for better spacing */
+    background-color: rgb(244, 243, 243);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    margin-top: 8px;
+    box-sizing: border-box;
+    border-radius: 6px;
+  }
+   
+  .homepagebtn{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 15px;
+
+
+  }
+
+  .lcro-submit-button {
+    width: 100%; /* Change button width to 100% for smaller screens */
+    padding: 10px;
+    background-color: #31c031;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 0 auto;
+    
+    
+    
+  }
+  
+  .lcro-submit-button:hover {
+    background-color: #21db14;
+  }
+  
+  /* Adjust margins for better spacing on smaller screens */
+  .cnumber,
+  .fname,
+  .lname {
+    margin-bottom: 15px;
+  }
+  
+  /* Combine margin styles for .cnumber and .fname for cleaner code */
+  .cnumber,
+  .fname {
+    margin-bottom: 15px;
+  }
+  .cnumber h1{
+    font-size: 2.8rem;
+    text-align: center;
+  }
+  .cnumber h2{
+    margin-bottom: 40px;
+    font-size: 15px;
+  }
+  
+  /* Media query for tablets and smaller devices */
+  @media screen and (max-width: 768px) {
+    .docu-container {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin: 0 50px 0 0;
+    }
+    
+    form {
+      width: 340px; /* Adjust form width for smaller screens */
+      height: 90vh;
+    }
+  
+    .left-section img {
+      display: none; /* Hide the logo on tablets and smaller devices */
+    }
+  
+  }
+  
+  /* Media query for mobile devices */
+  @media screen and (max-width: 480px) {
+    .web-title {
+      font-size: 1.2rem; /* Further decrease font size for mobile screens */
+      margin-top: 5vh; /* Adjust margin top for smaller screens */
+    }
+  }
